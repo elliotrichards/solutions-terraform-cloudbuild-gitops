@@ -89,9 +89,4 @@ steps:
         echo "Branch '$BRANCH_NAME' does not represent an official environment."
         echo "*******************************************************************************"
       fi
-
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/myproject/myrepo/myimage', '.' ]
-options:
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 # [END tf-apply]      
